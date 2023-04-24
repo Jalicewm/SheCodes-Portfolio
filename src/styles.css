@@ -1,0 +1,77 @@
+:root {
+  --main-branding-color: #303030;
+  --second-branding-color: #d1c2d9;
+  --third-branding-color: #301934;
+  --main-font: "Alice", serif;
+  --second-font: "Parisienne", cursive;
+}
+
+@media (max-width: 575px) {
+  img {
+    display: none;
+  }
+}
+
+body {
+  color: var(--second-branding-color);
+  background: var(--main-branding-color);
+  font-family: var(--main-font);
+}
+
+h1,
+h2 {
+  font-family: var(--second-font);
+}
+
+button {
+  font-family: var(--main-font);
+  color: var(--third-branding-color);
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+img {
+  margin: 10px;
+}
+
+.hi,
+.aboutHeading {
+  margin-top: 100px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.homepage,
+.about {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.navigation {
+  color: var(--main-branding-color) !important;
+  background-color: var(--second-branding-color) !important;
+  font-family: var(--main-font) !important;
+  z-index: 2;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.custom-toggler {
+  border: solid var(--main-branding-color) 1px;
+}
